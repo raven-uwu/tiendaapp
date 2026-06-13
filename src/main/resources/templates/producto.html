@@ -1,0 +1,15 @@
+<nav>
+    <ol class="breadcrumb">
+        <li class="breadcrumb-item"><a href="/productos">Productos</a></li>
+        <li class="breadcrumb-item active" th:text="${producto?.nombre} ?: 'No encontrado'">x</li>
+    </ol>
+</nav>
+<div th:if="${producto != null}">
+    <h2 th:text="${producto.nombre}">Nombre</h2>
+    <p th:text="${producto.descripcion}">desc</p>
+</div>
+<div th:if="${producto == null}" class="alert alert-warning">
+
+    Producto no encontrado.
+
+</div>

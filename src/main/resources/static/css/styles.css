@@ -1,0 +1,108 @@
+:root {
+    --brand: #ff8fab;
+    --brand-accent: #b388ff;
+    --brand-light: #fff5fa;
+    --kawaii-pink: #ffc2d1;
+    --kawaii-yellow: #fff0a6;
+    --kawaii-blue: #bde0fe;
+    --kawaii-text: #5c4b51;
+}
+
+body {
+    background: linear-gradient(180deg, var(--brand-light), #ffffff);
+    color: var(--kawaii-text);
+    font-family: "Segoe UI", Arial, sans-serif;
+}
+
+.brand-bg {
+    background: linear-gradient(90deg, var(--brand), var(--brand-accent)) !important;
+    color: #fff;
+}
+
+.brand-accent {
+    color: var(--brand-accent) !important;
+}
+
+.navbar-brand {
+    letter-spacing: .5px;
+}
+
+.navbar-brand::after {
+    content: " ♡";
+}
+
+.card {
+    border: 2px solid var(--kawaii-pink);
+    border-radius: 1.25rem;
+    overflow: hidden;
+}
+
+.card-hover {
+    transition: transform .15s ease, box-shadow .15s ease;
+}
+
+.card-hover:hover {
+    transform: translateY(-3px);
+    box-shadow: 0 .6rem 1.2rem rgba(255, 143, 171, .35) !important;
+}
+
+.card-title,
+h1,
+h2,
+h3,
+h4,
+h5 {
+    color: var(--brand);
+}
+
+.btn-primary,
+.btn-outline-primary:hover {
+    background-color: var(--brand) !important;
+    border-color: var(--brand) !important;
+    color: #fff !important;
+}
+
+.btn-outline-primary {
+    border-color: var(--brand);
+    color: var(--brand);
+    border-radius: 999px;
+}
+
+.btn-outline-light {
+    border-radius: 999px;
+}
+
+.badge {
+    border-radius: 999px;
+}
+
+.stock-ok {
+    color: #42b883;
+    font-weight: 600;
+}
+
+.stock-bajo {
+    color: #ffb703;
+    font-weight: 600;
+}
+
+.stock-agotado {
+    color: #ff5d8f;
+    font-weight: 600;
+}
+
+.footer-curso {
+    margin-top: 4rem;
+    padding: 1.5rem 0;
+    color: #9d8189;
+    font-size: .85rem;
+    text-align: center;
+}
+
+.footer-curso::before {
+    content: "🌸 ";
+}
+
+.footer-curso::after {
+    content: " 🌸";
+}
